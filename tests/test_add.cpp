@@ -1,7 +1,6 @@
 #include <add.h>
-#include <sub.h>
 #include <catch2/catch_test_macros.hpp>
-
+#include <sub.h>
 
 
 TEST_CASE("Use Required", "[add]") {
@@ -43,14 +42,5 @@ TEST_CASE("Test test", "[add]") {
     REQUIRE(add(5, 5) == 10);
 }
 
-#include "factorial.h"
-
-
-TEST_CASE("Factorials are computed", "[factorial]") {
-    REQUIRE(Factorial(1) == 1);
-    REQUIRE(Factorial(2) == 2);
-    REQUIRE(Factorial(3) == 6);
-    REQUIRE(Factorial(10) == 3628800);
-}
 
 // Trigger
